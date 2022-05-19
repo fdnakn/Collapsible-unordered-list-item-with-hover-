@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+   height: 100vh;
+   background-image: url(https://media.istockphoto.com/photos/abstract-painted-art-background-picture-id1059897342?b=1&k=20&m=1059897342&s=170667a&w=0&h=La7QsWmt7G8hI72k2T6F6SM71IjcjtOh8O-ESJvRSLg=);
+   background-size: cover;
+   font-family: sans-serif;
+
+}
+.menu-bar{
+    background: #EF776F; 
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+    background: #D50E57;
+    border-radius: 10px;
+}
+.menu-bar .fas{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background:#EF776F ;
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 14px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #FDDEAD;
+    text-align: left;
+    font-size: 15px;
+    
+}
+.menu-bar ul li:hover .sub-menu-1 ul a:hover{
+    color: #FDDEAD;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+}
+.fa-caret-right{
+    margin-left: 10px;
+    font-size: 15px;
+    color: #FDDEAD;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #EF776F;
+
+}
